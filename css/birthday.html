@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            text-align: center;
+            padding: 50px;
+        }
+
+        .card {
+            background: rgb(255, 255, 255);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(119, 14, 14, 0.2);
+            padding: 40px;
+            width: 400px;
+            margin: auto;
+        }
+
+        h1 {
+            color: #ff4081;
+            font-size: 2.5em;
+        }
+
+        .celebrate {
+            background-image: linear-gradient(to right, #fc00ff 0%, #00dbde 51%, #fc00ff 100%);
+
+        }
+
+        .celebrate {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 15px 0%;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+            outline: none;
+            border: none;
+            font-size: 1em;
+            text-decoration: none;
+            width: 200px;
+
+        }
+
+        .celebrate:hover {
+            background-position: right center;
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .birthday {
+            color: red;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        #party {
+            display: none;
+            font-size: 40px;
+            margin-top: 20px;
+            animation: pop 1s ease forwards;
+        }
+
+        #party:target {
+            display: block;
+        }
+
+        @keyframes pop {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+
+            100% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1 class="birthday">Happy Birthday !</h1>
+        <p class="message">Wishing you a day filled with love, laughter, and joy. Happy Birthday!</p>
+        <a href="#party" class="celebrate">celebrate🎁🎉</a>
+    </div>
+    <div id="party">🎉🎉💖💕💖🎉🎉🎉</div>
+
+</body>
+</body>
+</body>
+
+</html>

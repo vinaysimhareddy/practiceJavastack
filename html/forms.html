@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My images page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./gear-5-monkey-d-luffy.jpg"/>
+        
+    </head>
+    <body>
+        <fieldset>
+            <legend><b>User Personal Information</b></legend>
+            <form>
+                <label>Enter your full name: </label>
+                <input type="text" name="fulname" placeholder="Enter full name"/><br/>
+                <label>Enter your email: </label>
+                <input type="email" name="email" placeholder="Enter email"/><br/>
+                <label>Enter your password: </label>
+                <input type="password" name="password" placeholder="Enter password"/><br/>
+                <label>Confirm password: </label>
+                <input type="password" name="confirmpassword" placeholder="Confirm password"/><br/>
+                <label>Enter your Gender: </label>
+                <input type="radio" name="gender" value="male"/>Male
+                <input type="radio" name="gender" value="female"/>Female
+                <input type="radio" name="gender" value="other"/>Other<br/>
+                <label>Enter your date of birth: </label>
+                <input type="date" name="dob" validate="DD-MM-YYYY"/><br/>
+                <label>Interested courses: </label>
+                <input type="checkbox" name="course" value="python"/>Python
+                <input type="checkbox" name="course" value="java"/>Java
+                <input type="checkbox" name="course" value="javascript"/>JavaScript<br/>
+                <label>select your year:</label>
+                <select name="year">
+                    <option value="first">First Year</option>
+                    <option value="second">Second Year</option>
+                    <option value="third">Third Year</option>
+                    <option value="fourth">Fourth Year</option>
+                </select><br/>
+                <label>Enter your phone number: </label>
+                <input type="tel" name="phone" placeholder="Enter phone number" pattern="[0,9]{10}"/><br/>
+                <label>Enter your address: </label><br/>
+                <textarea name="address" placeholder="Enter address"></textarea><br/>
+                <input type="submit" value="Submit"/>
+            </form>
+        </fieldset>
+    </body>

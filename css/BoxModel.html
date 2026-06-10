@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #div1 {
+        width: 300px; /* bigger content area */
+        height: 200px; /* bigger content area */
+        border: 10px solid black;
+        padding: 60px 40px 30px 20px; /* top right bottom left */
+        border-top: 10px solid red;
+        border-right: 10px solid blue;
+        border-bottom: 10px solid green;
+        border-left: 10px solid yellow;
+        box-sizing: content-box;
+        margin: 20px;
+        background-color: lightgray; /* makes padding visible */
+      }
+      #div2 {
+        border: 2px solid darkblue; /* short hand operator: width style color */
+        border-style: dotted;
+        border-color: red;
+        border-width: 5px;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+      }
+      #firstName {
+        outline: 2px solid blue;
+        outline-color: red;
+        outline-width: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Box Model</h1>
+    <div id="div1">
+      <p>This is a simple box.</p>
+      <p>It has content, padding, border, and margin.</p>
+      <p>Content is the innermost part of the box.</p>
+      <p>Padding is the space between the content and the border.</p>
+    </div>
+    <div id="div2">
+      <p>This is a simple box.</p>
+      <p>It has content, padding, border, and margin.</p>
+      <p>Content is the innermost part of the box.</p>
+      <p>Padding is the space between the content and the border.</p>
+    </div>
+    <div>
+      <label for="#firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" />
+    </div>
+  </body>
+</html>
