@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            background: #5a57f49f;
+            padding: 3px;
+        }
+
+        input {
+            background: #7fe4be;
+            padding: 3px;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #a4de10;
+            padding: 3px;
+
+        }
+
+        input::placeholder {
+            color: black;
+            font-style: oblique;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<script>
+    var form = document.createElement("form"); //<form></form>
+
+    var firstNameLabel = document.createElement("label");
+    firstNameLabel.setAttribute("id", "labelFirstName");
+    firstNameLabel.setAttribute("for", "firstName");
+
+    firstNameLabel.innerHTML = "name";
+
+    var brTag = document.createElement("br");
+    var firstNameInput = document.createElement("input");
+    firstNameInput.setAttribute("type", "text");
+    firstNameInput.setAttribute("id", "firstName");
+    firstNameInput.setAttribute("placeholder", "enter first name");
+
+
+
+    var brTag1 = document.createElement("br");
+    var emailLabel = document.createElement("label");
+    emailLabel.setAttribute("id", "labelEmail");
+    emailLabel.setAttribute("for", "emailId");
+
+    emailLabel.innerHTML = "email";
+
+    var brTag2 = document.createElement("br");
+    var emailInput = document.createElement("input");
+    emailInput.setAttribute("type", "email");
+    emailInput.setAttribute("id", "emailId");
+    emailInput.setAttribute("placeholder", "enter email")
+
+
+
+
+    var brTag3 = document.createElement("br");
+    var passwordLabel = document.createElement("label");
+    passwordLabel.setAttribute("id", "password");
+    passwordLabel.setAttribute("for", "passwordId");
+
+    passwordLabel.innerHTML = "password";
+
+    var brTag4 = document.createElement("br");
+    var passwordInput = document.createElement("input");
+    passwordInput.setAttribute("type", "password");
+    passwordInput.setAttribute("id", "passwordId");
+    passwordInput.setAttribute("placeholder", "enter password");
+
+
+    var brTag5 = document.createElement("br");
+    var button = document.createElement("button");
+    button.setAttribute("type", "submit");
+    button.setAttribute("id", "buttonId");
+    button.setAttribute("value", "Login");
+    button.innerHTML = "Button";
+
+
+    form.appendChild(firstNameLabel);
+    form.appendChild(brTag);
+    form.appendChild(firstNameInput);
+    form.appendChild(brTag1);
+    form.appendChild(emailLabel);
+    form.appendChild(brTag2);
+    form.appendChild(emailInput);
+    form.appendChild(brTag3);
+    form.appendChild(passwordLabel);
+    form.appendChild(brTag4);
+    form.appendChild(passwordInput);
+    form.appendChild(brTag5);
+    form.appendChild(button);
+
+
+
+    document.getElementsByTagName("body")[0].append(form);
+</script>
+
+</html>
