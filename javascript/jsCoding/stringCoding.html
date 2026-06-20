@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let iphones = [
+        {
+            iphoneId: 1,
+            name: `iPhone 15e 512 GB: 15.40 cm(6.1″) Super Retina XDR Display, 
+            A19 Chip, All - Day Battery Life,
+             48MP Fusion Camera, 256GB Starting Storage;
+              Black`,
+            rating: 5,
+            quantity: 1,
+            price: 89999
+        },
+        {
+            iphoneId: 2,
+            name: `iPhone 16e 512 GB: 15.40 cm (6.1″) Super Retina XDR Display, 
+            A19 Chip, All-Day Battery Life, 48MP Fusion Camera, 
+            256GB Starting Storage; Black`,
+            rating: 5,
+            quantity: 1,
+            price: 89999
+        },
+        {
+            iphoneId: 3,
+            name: `iPhone 14e 512 GB: 15.40 cm (6.1″) Super Retina XDR Display, 
+            A19 Chip, All-Day Battery Life, 48MP Fusion Camera, 
+            256GB Starting Storage; Black`,
+            rating: 5,
+            quantity: 1,
+            price: 89999
+        },
+        {
+            iphoneId: 4,
+            name: `iPhone 13e 512 GB: 15.40 cm (6.1″) Super Retina XDR Display, 
+            A19 Chip, All-Day Battery Life, 48MP Fusion Camera, 
+            256GB Starting Storage; Black`,
+            rating: 5,
+            quantity: 1,
+            price: 89999
+        }
+    ]
+
+    let input = "Iphone 16 pro";
+    let result = [];
+    let inputSplit = input.toLowerCase().split(" ");//[input,16,pro]
+
+    for (let i = 0; i < inputSplit.length; i++) { //item.name.toLowerCase().includes(inputSplit[i]);
+        let results = iphones.filter((item => {
+            return item.name.toLocaleLowerCase().includes(inputSplit[i]);
+        }));
+        for (let i = 0; i < results.length; i++) {
+            let isPresent = result.find(item => {
+                return item.iphoneId == results[i].iphoneId
+            });
+            if (!(isPresent)) {
+                result.push(results[i]);
+            }
+        }
+    }
+    console.log(result);
+</script>
+
+</html>

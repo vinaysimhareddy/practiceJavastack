@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <input type="text" name="name" placerholder="Enter your name " />
+        <input type="submit" id="button" value="submit" />
+    </form>
+</body>
+<script>
+
+    document.getElementById("button").addEventListener("click", function (e) {
+        e.preventDefault();
+        console.log("Button clicked");
+    });
+
+
+
+    let object = {
+        name: "vinay",
+        age: 20
+    }
+    console.log("Before");//1
+    setTimeout(() => {
+        console.log("inside setTimeout");//4
+    }, 0);
+    Promise.resolve().then(() => {
+        console.log("inside promise");//3
+    })
+    console.log("After");//2
+
+
+
+    // let i = 0;
+    // let interval = setInterval(() => {
+    //     if (i == 5) {
+    //         clearInterval(interval);
+    //         console.log("Done");
+    //     }
+    //     console.log("hi");
+    //     i++;
+    // }, 1000);
+</script>
+
+</html>

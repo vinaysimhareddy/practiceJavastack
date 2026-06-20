@@ -1,0 +1,12 @@
+let cookie = 'session-id=523-6723010-9950206; session-id-time=2082787201l; i18n-prefs=INR; lc-acbin=en_IN; ubid-acbin=525-2375119-6240004; session-token=Lt4x8DbzVc1O9maek3PjARkCf7D8bQjiA8MvTx/lqFSLwv7BP6zfLjgYV/oBvlvNL1Ull+S+QcRskjXfUrc/N8K4l19EvtazEdDROethMdA039fiIz6NqhNYlXSbwzDKWVbgcjYhsAah3ggoZR/eIS9zdKrRN1Cr/zIZz8uVKS/TYdlWdebZjJX15loIWoRcGv9UMutWqCDj5kZ9e1fcmf6/9LgUAShO; csm - hit=adb: adblk_no & t: 1781970245198 & tb: s - G4TBX4CCA0SFQ6M6DWHG | 1781970244275; rxc = AMRlJfj8yfN + KNVvzQo';
+let cookieArray = cookie.split(';');
+console.log(cookieArray);
+let obj = {};
+console.log(obj);
+let keyValueArray = {};
+for (let i = 0; i < cookieArray.length; i++) {
+    keyValueArray = cookieArray[i].split('=');
+    obj[keyValueArray[0].trim()] = keyValueArray[1].trim();
+}
+console.log(keyValueArray);
+console.log(obj);
