@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 5rem;
+    background-color: rgb(249, 249, 199);
+    border: 2px solid black;
+}
+
+.heding {
+    margin-bottom: 1.5rem;
+}
+
+.input-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+#inputId {
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 1rem;
+    padding-right: 3rem;
+    /* space for icon */
+}
+
+.plus-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#taskList {
+    margin-top: 1.5rem;
+    list-style-type: none;
+    padding: 0;
+}
+
+#taskList li {
+    font-size: 18px;
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+#taskList li.completed {
+    text-decoration: line-through;
+    color: gray;
+}
