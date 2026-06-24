@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            max-width: 100%;
+            height: 100vh;
+
+        }
+
+        .card {
+            background-color: aqua;
+            padding: 4rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            position: absolute;
+            top: 30%;
+            box-shadow: 15px 14px 55px 24px rgba(3, 22, 3, 0.43);
+            -webkit-box-shadow: 15px 14px 55px 24px rgba(3, 22, 3, 0.43);
+            -moz-box-shadow: 15px 14px 55px 24px rgba(3, 22, 3, 0.43);
+            border-radius: 10px;
+        }
+
+        label {
+            font-size: x-large;
+        }
+
+        #price {
+            border-radius: 5px;
+            padding: 0.5rem;
+            margin: 3px 0px 3px 0px;
+        }
+
+        #quantity {
+            border-radius: 5px;
+            padding: 0.5rem;
+            margin: 3px 0px 3px 0px;
+        }
+
+
+
+
+        .btn-grad {
+            background-image: linear-gradient(to right, #603813 0%, #b29f94 51%, #603813 100%);
+        }
+
+        .btn-grad {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+            outline: none;
+            border: none;
+        }
+
+        .btn-grad:hover {
+            background-position: right center;
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <label class="label" for="price">Price</label>
+        <input id="price" type="number" /><br />
+        <label class="label" for="quantity">Quantity</label>
+        <input id="quantity" type="number" />
+        <button class="btn-grad" type="submit" onclick="mul()" value="submit">submit</button>
+        <div id="result"></div>
+    </div>
+    <!-- <div>
+        <p id="msg">Wait 3 seconds...</p>
+        <script>
+            setTimeout(() => {
+                document.getElementById("msg").textContent = " Hello after 3 seconds";
+
+            }, 3000)
+        </script>
+    </div> -->
+    <!-- <div>
+        <p id="para">loading..</p>
+        <script>
+            let mypromise = new Promise((resolve, reject) => {
+
+                setTimeout(() => {
+                    resolve("Data Loaded after 2 seconds");
+                }, 2000);
+            })
+            mypromise.then((success) => {
+                document.getElementById("para").textContent = success;
+            })
+        </script>
+    </div> -->
+    <!-- <div>
+        <p id="pId">Waiting...</p>
+        <script>
+            async function getUser() {
+                await new Promise(resolve => setTimeout(resolve, 3000));
+                return "User data received";
+            }
+            getUser().then(result => {
+                document.getElementById("pId").textContent = result;
+            });
+        </script>
+    </div> -->
+    <div>
+        <pre id="output"></pre>
+        <script>
+            for (let i = 0; i <= 20; i++) {
+                if (i % 15 === 0) {
+                    document.getElementById("output").textContent += i + "-> FizzBuzz\n";
+                } else if (i % 3 === 0) {
+                    document.getElementById("output").textContent += i + "-> Fizz\n";
+                } else if (i % 5 === 0) {
+                    document.getElementById("output").textContent += i + "-> Buzz\n";
+                }
+
+            }
+        </script>
+    </div>
+</body>
+<script src="AssignmentEasy.js"></script>
+
+</html>
