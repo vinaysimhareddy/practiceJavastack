@@ -151,3 +151,47 @@
 // }
 // console.log(count);
 
+//find duplicate Elements
+
+// let input = [1, 2, 3, 2, 4, 5, 1];
+// let arr = new Set();
+// let result = new Set();
+// for (let i = 0; i < input.length; i++) {
+//     if (arr.has(input[i])) {
+//         result.add(input[i]);
+//     }
+//     arr.add(input[i]);
+// }
+// console.log(Array.from(result));
+
+// function findDuplicates(arr) {
+//     let seen = new Set();
+//     let duplicates = [];
+
+//     for (let num of arr) {
+//         if (seen.has(num)) {
+//             // Only add if not already in duplicates
+//             if (!duplicates.includes(num)) {
+//                 duplicates.push(num);
+//             }
+//         } else {
+//             seen.add(num);
+//         }
+//     }
+
+//     return duplicates;
+// }
+
+// // Example usage:
+// const input = [1, 2, 3, 2, 4, 5, 1];
+// console.log(findDuplicates(input)); // Output: [1, 2]
+
+//shopping cart total
+
+let input = [
+    { name: "Pen", price: 10 },
+    { name: "Book", price: 50 },
+    { name: "Bag", price: 500 }
+];
+let sum = input.reduce((ans, val) => ans + val.price, 0);
+console.log(sum);
