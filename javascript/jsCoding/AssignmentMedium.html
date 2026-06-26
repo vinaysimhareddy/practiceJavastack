@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="nameId">Name =</label>
+    <input id="nameId" type="text" placeholder="Enter your Name" />
+    <label for="mathId">Math</label>
+    <input id="mathId" type="number" placeholder="Enter your Marks" />
+    <label for="scienceId">science</label>
+    <input id="scienceId" type="number" placeholder="Enter your Marks" />
+    <label for="englishId">English</label>
+    <input id="englishId" type="number" placeholder="Enter your Marks" />
+    <label for="HistoryId">History</label>
+    <input id="HistoryId" type="number" placeholder="Enter your Marks" />
+    <label for="GeographyId">Geography </label>
+    <input id="GeographyId" type="number" placeholder="Enter your Marks" />
+    <pre id="pre"></pre>
+
+    <button type="submit" id="btn">submit</button>
+</body>
+<script>
+    function output() {
+        let name = document.getElementById("nameId").value;
+        let math = document.getElementById("mathId").value;
+        let science = document.getElementById("scienceId").value;
+        let english = document.getElementById("englishId").value;
+        let history = document.getElementById("HistoryId").value;
+        let geography = document.getElementById("GeographyId").value;
+
+
+
+
+    }
+    document.getElementById("btn").addEventListener("click", output);
+</script>
+
+</html>
