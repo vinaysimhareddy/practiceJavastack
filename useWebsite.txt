@@ -2,3 +2,4 @@ App or wesite name                used for
 CSS GENERATOR TOOL     ----    for (text showdow generator)
 GRADIENT BUTTONS      ------   for (linear-gradient buttons)
 CSS SCAN            ---------- for (Box showdow )
+typescript to javascript ----- for(ts to js )
